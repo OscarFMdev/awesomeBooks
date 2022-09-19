@@ -42,11 +42,11 @@ To get a local copy up and running please click on the [Live Demo Link](https://
 - Twitter: [@OscarFMdev](https://twitter.com/OscarFMdev)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/OscarFMdev)
 
-👤 **Author2**
+👤 **Debby Miressa**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@debby_miressa](https://github.com/DebbyMiressa)
+- Twitter: [@debby_miressa](https://twitter.com/debby_miressa)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/debby-miressa-0b85b6182)
 
 ## 🤝 Contributing
 

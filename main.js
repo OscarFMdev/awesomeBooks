@@ -22,7 +22,6 @@ function addBook(e) {
   displayBooks();
 }
 
-/* Functions
 function displayBooks() {
   const books = JSON.parse(localStorage.getItem('books'));
   bookList.innerHTML = books.map((book, i) => {
@@ -45,12 +44,8 @@ function removeBook(e) {
   displayBooks();
 }
 
-*/
-
-/* Event Listeners 
+/* Event Listeners */
   
 form.addEventListener('submit', addBook);
 
 bookList.addEventListener('click', removeBook);
-
-*/
