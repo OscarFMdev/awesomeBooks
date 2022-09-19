@@ -13,7 +13,7 @@ In this project we created a low fidelity wirefrime with basic HTML and JavaScri
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://oscarfmdev.github.io/awesomeBooks/)
 
 
 ## Getting Started
