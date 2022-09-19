@@ -45,5 +45,6 @@ function removeBook(e) {
 /* Event Listeners */
 
 form.addEventListener('submit', addBook);
-
 bookList.addEventListener('click', removeBook);
+
+window.addEventListener('DOMContentLoaded', displayBooks);
