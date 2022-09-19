@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Awesomo Books
+# Awesome Books
 
 In this project we created a low fidelity wirefrime with basic HTML and JavaScript classes, the learning objectives in this project are:
 - Understand different ways to create objects in JavaScript.
