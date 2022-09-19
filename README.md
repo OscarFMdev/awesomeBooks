@@ -18,7 +18,7 @@ In this project we created a low fidelity wirefrime with basic HTML and JavaScri
 
 ## Getting Started
 
-To get a local copy up and running please click on the [Live Demo Link](https://livedemo.com).
+To get a local copy up and running please click on the [Live Demo Link](https://oscarfmdev.github.io/awesomeBooks/).
 
 ### Prerequisites
 
