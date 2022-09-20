@@ -17,9 +17,10 @@ class Collection {
 
   displayBooks() {
     bookList.innerHTML = this.booksArray.map((book, i) => `
-      <li class="book">
-        <h2 class="book-title">${book.name}</h2>
-        <p class="book-author">${book.author}</p>
+      <li class="book element-${i % 2}">
+        <div class="text">
+        <h2 class="book-info">"${book.name}" by ${book.author}</h2>
+        </div>
         <button class="remove-book" data-index=${i}>Remove</button>
       </li>
       `).join('');
