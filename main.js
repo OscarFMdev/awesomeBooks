@@ -15,8 +15,7 @@ const form = document.querySelector('form');
 
 /* Functions */
 function displayBooks() {
-  const books = JSON.parse(localStorage.getItem('books'));
-  bookList.innerHTML = books.map((book, i) => `
+  bookList.innerHTML = booksArray.map((book, i) => `
     <li class="book">
       <h2 class="book-title">${book.name}</h2>
       <p class="book-author">${book.author}</p>
