@@ -12,25 +12,31 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 body > h1 {
   align-self: center;
 }
+
 .book-list {
   border: 3px solid black;
   padding-left: 0;
   margin: 0 20px;
   min-width: 267px;
 }
+
 .book {
   display: flex;
   justify-content: space-between;
 }
+
 .text {
   margin-left: 50px;
 }
+
 .book-info {
   font-size: 10px;
 }
+
 .remove-book {
   background-color: white;
   height: 25px;
@@ -43,13 +49,16 @@ body > h1 {
   cursor: pointer;
   font-size: 12px;
 }
+
 .element-0 {
   background-color: lightgrey;
 }
+
 hr {
   margin: 30px auto;
   width: 20vw;
 }
+
 form {
   display: flex;
   flex-direction: column;
@@ -57,12 +66,14 @@ form {
   justify-content: center;
   gap: 10px;
 }
+
 form input {
   width: 300px;
   height: 30px;
   border-radius: 3px;
   border: 1px solid black;
 }
+
 .add-button {
   margin-left: 240px;
   width: 60px;
@@ -72,10 +83,12 @@ form input {
   box-shadow: 4px 4px;
   cursor: pointer;
 }
+
 @media only screen and (min-width: 768px) {
   .book-info {
     font-size: 20px;
   }
+
   .remove-book {
     height: 50px;
     width: 20%;
