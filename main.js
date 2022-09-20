@@ -22,7 +22,6 @@ class Collection {
         <p class="book-author">${book.author}</p>
         <button class="remove-book" data-index=${i}>Remove</button>
       </li>
-      <hr style="width: 500px; margin-left: 0;">
       `).join('');
   }
 
