@@ -18,20 +18,25 @@ In this project we created a low fidelity wirefrime with basic HTML and JavaScri
 
 ## Getting Started
 
-To get a local copy up and running please click on the [Live Demo Link](https://oscarfmdev.github.io/awesomeBooks/).
-
 ### Prerequisites
-
-### Setup
-
+* Have git installed. (For version control)
+* Have text editor installed. (Preferablly VSCode)
+* Have CSS,HTML & JS Linters installed and configured. For further information, visit [this link](https://github.com/microverseinc/linters-config/blob/master/README.md) to get better understanding on each linters used on this project.
 ### Install
-
+#### Linters Installation
+- webhint - npm install --save-dev hint@7.x
+- stylelint - npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+- ESLint - npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
 ### Usage
+This page registers books with author and title of the book. To register a book:
+1. Type the author's name.
+2. Type the book's title.
+3. Click on Add button below.
+4. The books will be added to the list and will be displayed.
 
-### Run tests
-
-### Deployment
-
+To remove a book from the list:
+1. Find the book in the list.
+2. Click on remove button for the respective book.
 
 
 ## Authors
