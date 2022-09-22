@@ -70,6 +70,7 @@ function listSelected() {
   contactPage.style.visibility = 'hidden';
   contactPage.style.height = '0';
   listPage.style.visibility = 'visible';
+  listPage.style.height = '100%';
 }
 
 function addSelected() {
@@ -78,6 +79,7 @@ function addSelected() {
   contactPage.style.visibility = 'hidden';
   contactPage.style.height = '0';
   addPage.style.visibility = 'visible';
+  addPage.style.height = '100%';
 }
 
 function contactSelected() {
@@ -86,6 +88,7 @@ function contactSelected() {
   addPage.style.visibility = 'hidden';
   addPage.style.height = '0';
   contactPage.style.visibility = 'visible';
+  contactPage.style.height = '100%';
 }
 
 /* Navigation event listeners */
