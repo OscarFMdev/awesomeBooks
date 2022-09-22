@@ -48,6 +48,23 @@ const collection = new Collection();
 /* Displays books on DOM loaded */
 collection.displayBooks();
 
-/*  */
 form.addEventListener('submit', collection.addBook.bind(collection));
 bookList.addEventListener('click', collection.removeBook.bind(collection));
+
+/* Navigation */
+
+const listPage = document.getElementById('list');
+const addPage = document.getElementById('newBook');
+const contactPage = document.getElementById('contact');
+
+listPage.addEventListener('click', () => {
+
+});
+
+addPage.addEventListener('click', () => {
+
+});
+
+contactPage.addEventListener('click', () => {
+
+});
