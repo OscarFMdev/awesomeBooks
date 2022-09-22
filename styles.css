@@ -11,10 +11,52 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  height: 98.5vh;
 }
 
-body > h1 {
-  align-self: center;
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 5px solid black;
+}
+
+.nav-container .logo {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: 50px;
+}
+
+.navigation-options {
+  list-style: none;
+  display: flex;
+  column-gap: 7px;
+  margin-right: 50px;
+}
+
+#date {
+  text-align: end;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  border-right: 5px solid black;
+  padding-right: 4px;
+  display: inline-block;
+  max-height: 18.9833px;
+}
+
+#list h1 {
+  text-align: center;
 }
 
 .book-list {
@@ -22,6 +64,7 @@ body > h1 {
   padding-left: 0;
   margin: 0 20px;
   min-width: 267px;
+  list-style: none;
 }
 
 .book {
@@ -65,6 +108,7 @@ form {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 100px;
 }
 
 form input {
@@ -84,7 +128,40 @@ form input {
   cursor: pointer;
 }
 
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#contact > h2 {
+  font-size: 45px;
+  text-align: center;
+}
+
+#contact > *:not(h2) {
+  font-size: 25px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  border: 5px solid black;
+  position: relative;
+  bottom: 5px;
+  width: 100%;
+  margin-top: auto;
+}
+
+footer .footer-text {
+  font-size: 20px;
+}
+
 @media only screen and (min-width: 768px) {
+  .nav-container .logo {
+    font-size: 30px;
+  }
+
   .book-info {
     font-size: 20px;
   }
