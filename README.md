@@ -2,7 +2,7 @@
 
 # Awesome Books
 
-In this project we created a low fidelity wirefrime with basic HTML and JavaScript classes, the learning objectives in this project are:
+In this project we created a low fidelity wire-frame with basic HTML and JavaScript classes, the learning objectives in this project are:
 - Understand different ways to create objects in JavaScript.
 - Create and access properties and methods of JavaScript objects.
 
@@ -20,7 +20,7 @@ In this project we created a low fidelity wirefrime with basic HTML and JavaScri
 
 ### Prerequisites
 * Have git installed. (For version control)
-* Have text editor installed. (Preferablly VSCode)
+* Have text editor installed. (Preferably VSCode)
 * Have CSS,HTML & JS Linters installed and configured. For further information, visit [this link](https://github.com/microverseinc/linters-config/blob/master/README.md) to get better understanding on each linters used on this project.
 ### Install
 #### Linters Installation
