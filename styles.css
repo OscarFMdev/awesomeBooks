@@ -11,6 +11,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  height: 98.5vh;
 }
 
 body > h1 {
@@ -33,13 +34,17 @@ body > h1 {
 .navigation-options {
   list-style: none;
   display: flex;
-  column-gap: 30px;
+  column-gap: 7px;
   margin-right: 50px;
 }
 
 li a {
   text-decoration: none;
   color: black;
+  border-right: 5px solid black;
+  padding-right: 4px;
+  display: inline-block;
+  max-height: 18.9833px;
 }
 
 .book-list {
@@ -90,6 +95,7 @@ form {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 100px;
 }
 
 form input {
@@ -107,6 +113,20 @@ form input {
   border: 4px outset black;
   box-shadow: 4px 4px;
   cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  border: 5px solid black;
+  position: relative;
+  bottom: 5px;
+  width: 100%;
+  margin-top: auto;
+}
+
+footer .footer-text {
+  font-size: 20px;
 }
 
 @media only screen and (min-width: 768px) {
