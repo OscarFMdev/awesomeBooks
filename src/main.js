@@ -95,3 +95,13 @@ function contactSelected() {
 listNav.addEventListener('click', listSelected);
 addNav.addEventListener('click', addSelected);
 contactNav.addEventListener('click', contactSelected);
+window.addEventListener('load', listSelected);
+
+const timeDisplay = document.getElementById('date');
+
+function refreshTime() {
+  const dateString = new Date().toString();
+  const formattedString = dateString.replace('AM', 'am');
+  timeDisplay.textContent = formattedString;
+}
+setInterval(refreshTime, 1000);

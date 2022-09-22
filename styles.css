@@ -42,6 +42,10 @@ body {
   margin-right: 50px;
 }
 
+#date {
+  text-align: end;
+}
+
 li a {
   text-decoration: none;
   color: black;
