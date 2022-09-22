@@ -13,22 +13,22 @@
     <p class="logo">Awesome Books</p>
     <nav>
       <ul class="navigation-options">
-        <li><a href="#" id="list">List</a></li>
-        <li><a href="#" id="newBook">Add new</a></li>
-        <li><a href="#" id="contact">Contact</a></li>
+        <li><a href="#" class="list">List</a></li>
+        <li><a href="#" class="new-book">Add new</a></li>
+        <li><a href="#" class="contact">Contact</a></li>
       </ul>
     </nav>
   </section>
   <h1>Awesome Books</h1>
 
-  <main class="books">
+  <main class="books" id="list">
     <ul class="book-list" style="list-style: none;">
       
     </ul>
 
     <hr>
 
-    <form class="add-book">
+    <form class="add-book" id="new-book">
       <h2>Add a new book</h2>
       <input type="text" placeholder="Title" class="book-name" required>
       <br>
@@ -37,6 +37,13 @@
       <br>
       <br>
       <button type="submit" class="add-button">Add</button>
+    </form>
+
+
+    <section id="contact">
+
+    </section>
+
   </main>
 
   <footer>

@@ -51,20 +51,48 @@ collection.displayBooks();
 form.addEventListener('submit', collection.addBook.bind(collection));
 bookList.addEventListener('click', collection.removeBook.bind(collection));
 
-/* Navigation */
+/* Navigation selectors */
 
-const listPage = document.getElementById('list');
-const addPage = document.getElementById('newBook');
-const contactPage = document.getElementById('contact');
+const listNav = document.querySelector('.list');
+const addNav = document.querySelector('.new-book');
+const contactNav = document.querySelector('.contact');
 
-listPage.addEventListener('click', () => {
+/* Pages selectors */
+const listPage = document.querySelector('#list');
+const addPage = document.querySelector('#new-book');
+const contactPage = document.querySelector('#contact');
 
-});
+/* Functions */
 
-addPage.addEventListener('click', () => {
+function listSelected() {
+  addPage.classList.add('hide');
+  addPage.classList.remove('show');
+  contactPage.classList.add('hide');
+  contactPage.classList.remove('show');
+  listPage.classList.remove('hide');
+  listPage.classList.add('show');
+}
 
-});
+function addSelected() {
+  listPage.classList.add('hide');
+  listPage.classList.remove('show');
+  contactPage.classList.add('hide');
+  contactPage.classList.remove('show');
+  addPage.classList.remove('hide');
+  addPage.classList.add('show');
+}
 
-contactPage.addEventListener('click', () => {
+function contactSelected() {
+  listPage.classList.add('hide');
+  listPage.classList.remove('show');
+  addPage.classList.add('hide');
+  addPage.classList.remove('show');
+  contactPage.classList.remove('hide');
+  contactPage.classList.add('show');
+}
 
-});
+listNav.addEventListener('click', listSelected);
+
+addNav.addEventListener('click', addSelected);
+
+contactNav.addEventListener('click', contactSelected);
