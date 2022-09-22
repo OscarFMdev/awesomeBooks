@@ -17,6 +17,31 @@ body > h1 {
   align-self: center;
 }
 
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 5px solid black;
+}
+
+.nav-container .logo {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: 50px;
+}
+
+.navigation-options {
+  list-style: none;
+  display: flex;
+  column-gap: 30px;
+  margin-right: 50px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
 .book-list {
   border: 3px solid black;
   padding-left: 0;
@@ -85,6 +110,10 @@ form input {
 }
 
 @media only screen and (min-width: 768px) {
+  .nav-container .logo {
+    font-size: 30px;
+  }
+
   .book-info {
     font-size: 20px;
   }
