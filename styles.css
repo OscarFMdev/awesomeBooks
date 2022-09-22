@@ -124,6 +124,12 @@ form input {
   cursor: pointer;
 }
 
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
 footer {
   display: flex;
   justify-content: center;
