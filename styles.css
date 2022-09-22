@@ -18,6 +18,14 @@ body > h1 {
   align-self: center;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
