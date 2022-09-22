@@ -135,7 +135,12 @@ form input {
 }
 
 #contact > h2 {
-  font-size: 40px;
+  font-size: 45px;
+  text-align: center;
+}
+
+#contact > *:not(h2) {
+  font-size: 25px;
 }
 
 footer {
