@@ -66,19 +66,25 @@ const contactPage = document.querySelector('#contact');
 
 function listSelected() {
   addPage.style.visibility = 'hidden';
+  addPage.style.height = '0';
   contactPage.style.visibility = 'hidden';
+  contactPage.style.height = '0';
   listPage.style.visibility = 'visible';
 }
 
 function addSelected() {
   listPage.style.visibility = 'hidden';
+  listPage.style.height = '0';
   contactPage.style.visibility = 'hidden';
+  contactPage.style.height = '0';
   addPage.style.visibility = 'visible';
 }
 
 function contactSelected() {
   listPage.style.visibility = 'hidden';
+  listPage.style.height = '0';
   addPage.style.visibility = 'hidden';
+  addPage.style.height = '0';
   contactPage.style.visibility = 'visible';
 }
 
