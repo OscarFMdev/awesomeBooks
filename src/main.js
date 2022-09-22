@@ -65,34 +65,24 @@ const contactPage = document.querySelector('#contact');
 /* Functions */
 
 function listSelected() {
-  addPage.classList.add('hide');
-  addPage.classList.remove('show');
-  contactPage.classList.add('hide');
-  contactPage.classList.remove('show');
-  listPage.classList.remove('hide');
-  listPage.classList.add('show');
+  addPage.style.visibility = 'hidden';
+  contactPage.style.visibility = 'hidden';
+  listPage.style.visibility = 'visible';
 }
 
 function addSelected() {
-  listPage.classList.add('hide');
-  listPage.classList.remove('show');
-  contactPage.classList.add('hide');
-  contactPage.classList.remove('show');
-  addPage.classList.remove('hide');
-  addPage.classList.add('show');
+  listPage.style.visibility = 'hidden';
+  contactPage.style.visibility = 'hidden';
+  addPage.style.visibility = 'visible';
 }
 
 function contactSelected() {
-  listPage.classList.add('hide');
-  listPage.classList.remove('show');
-  addPage.classList.add('hide');
-  addPage.classList.remove('show');
-  contactPage.classList.remove('hide');
-  contactPage.classList.add('show');
+  listPage.style.visibility = 'hidden';
+  addPage.style.visibility = 'hidden';
+  contactPage.style.visibility = 'visible';
 }
 
+/* Navigation event listeners */
 listNav.addEventListener('click', listSelected);
-
 addNav.addEventListener('click', addSelected);
-
 contactNav.addEventListener('click', contactSelected);
