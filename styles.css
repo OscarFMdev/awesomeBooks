@@ -14,10 +14,6 @@ body {
   height: 98.5vh;
 }
 
-body > h1 {
-  align-self: center;
-}
-
 .hide {
   display: none;
 }
@@ -53,6 +49,10 @@ li a {
   padding-right: 4px;
   display: inline-block;
   max-height: 18.9833px;
+}
+
+#list h1 {
+  text-align: center;
 }
 
 .book-list {
@@ -124,10 +124,14 @@ form input {
   cursor: pointer;
 }
 
-#contact {
+.contact-container {
   display: flex;
-  flex-direction: column;
-  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#contact > h2 {
+  font-size: 40px;
 }
 
 footer {
