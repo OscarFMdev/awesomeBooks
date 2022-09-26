@@ -59,6 +59,10 @@ li a {
   text-align: center;
 }
 
+.no-books {
+  text-align: center;
+}
+
 .book-list {
   border: 3px solid black;
   padding-left: 0;

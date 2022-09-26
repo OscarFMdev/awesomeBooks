@@ -65,7 +65,7 @@ function listSelected() {
   listPage.style.display = 'block';
   listNav.style.color = 'blue';
   if (collection.booksArray.length === 0) {
-    bookList.innerHTML = '<h2 class="no-books">No books yet</h2>';
+    bookList.innerHTML = '<h2 class="no-books">Your book list is empty</h2>';
   }
 }
 
