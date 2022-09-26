@@ -65,29 +65,29 @@ const contactPage = document.querySelector('#contact');
 /* Functions */
 
 function listSelected() {
-  addPage.style.visibility = 'hidden';
+  addPage.style.display = 'none';
   addPage.style.height = '0';
-  contactPage.style.visibility = 'hidden';
+  contactPage.style.display = 'none';
   contactPage.style.height = '0';
-  listPage.style.visibility = 'visible';
+  listPage.style.display = 'block';
   listPage.style.height = '100%';
 }
 
 function addSelected() {
-  listPage.style.visibility = 'hidden';
+  listPage.style.display = 'none';
   listPage.style.height = '0';
-  contactPage.style.visibility = 'hidden';
+  contactPage.style.display = 'none';
   contactPage.style.height = '0';
-  addPage.style.visibility = 'visible';
+  addPage.style.display = 'flex';
   addPage.style.height = '100%';
 }
 
 function contactSelected() {
-  listPage.style.visibility = 'hidden';
+  listPage.style.display = 'none';
   listPage.style.height = '0';
-  addPage.style.visibility = 'hidden';
+  addPage.style.display = 'none';
   addPage.style.height = '0';
-  contactPage.style.visibility = 'visible';
+  contactPage.style.display = 'block';
   contactPage.style.height = '100%';
 }
 
