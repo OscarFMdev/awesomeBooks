@@ -66,29 +66,29 @@ const contactPage = document.querySelector('#contact');
 
 function listSelected() {
   addPage.style.display = 'none';
-  addPage.style.height = '0';
+  addNav.style.color = 'black';
   contactPage.style.display = 'none';
-  contactPage.style.height = '0';
+  contactNav.style.color = 'black';
   listPage.style.display = 'block';
-  listPage.style.height = '100%';
+  listNav.style.color = 'blue';
 }
 
 function addSelected() {
   listPage.style.display = 'none';
-  listPage.style.height = '0';
+  listNav.style.color = 'black';
   contactPage.style.display = 'none';
-  contactPage.style.height = '0';
+  contactNav.style.color = 'black';
   addPage.style.display = 'flex';
-  addPage.style.height = '100%';
+  addNav.style.color = 'blue';
 }
 
 function contactSelected() {
   listPage.style.display = 'none';
-  listPage.style.height = '0';
+  listNav.style.color = 'black';
   addPage.style.display = 'none';
-  addPage.style.height = '0';
+  addNav.style.color = 'black';
   contactPage.style.display = 'block';
-  contactPage.style.height = '100%';
+  contactNav.style.color = 'blue';
 }
 
 /* Navigation event listeners */
