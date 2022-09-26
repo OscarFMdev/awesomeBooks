@@ -4,6 +4,16 @@ const bookName = document.querySelector('.book-name');
 const author = document.querySelector('.author');
 const form = document.querySelector('form');
 
+/* Navigation selectors */
+const listNav = document.querySelector('.list');
+const addNav = document.querySelector('.new-book');
+const contactNav = document.querySelector('.contact');
+
+/* Pages selectors */
+const listPage = document.querySelector('#list');
+const addPage = document.querySelector('#new-book');
+const contactPage = document.querySelector('#contact');
+
 /* Object constructor */
 function Book(name, author) {
   this.name = name;
@@ -45,51 +55,48 @@ class Collection {
 
 const collection = new Collection();
 
-/* Displays books on DOM loaded */
-collection.displayBooks();
-
-form.addEventListener('submit', collection.addBook.bind(collection));
-bookList.addEventListener('click', collection.removeBook.bind(collection));
-
-/* Navigation selectors */
-
-const listNav = document.querySelector('.list');
-const addNav = document.querySelector('.new-book');
-const contactNav = document.querySelector('.contact');
-
-/* Pages selectors */
-const listPage = document.querySelector('#list');
-const addPage = document.querySelector('#new-book');
-const contactPage = document.querySelector('#contact');
-
-/* Functions */
+/* Navigation Functions */
 
 function listSelected() {
-  addPage.style.visibility = 'hidden';
-  addPage.style.height = '0';
-  contactPage.style.visibility = 'hidden';
-  contactPage.style.height = '0';
-  listPage.style.visibility = 'visible';
-  listPage.style.height = '100%';
+  addPage.style.display = 'none';
+  addNav.style.color = 'black';
+  contactPage.style.display = 'none';
+  contactNav.style.color = 'black';
+  listPage.style.display = 'block';
+  listNav.style.color = 'blue';
+  if (collection.booksArray.length === 0) {
+    bookList.innerHTML = '<h2 class="no-books">Your book list is empty</h2>';
+  }
 }
 
 function addSelected() {
-  listPage.style.visibility = 'hidden';
-  listPage.style.height = '0';
-  contactPage.style.visibility = 'hidden';
-  contactPage.style.height = '0';
-  addPage.style.visibility = 'visible';
-  addPage.style.height = '100%';
+  listPage.style.display = 'none';
+  listNav.style.color = 'black';
+  contactPage.style.display = 'none';
+  contactNav.style.color = 'black';
+  addPage.style.display = 'flex';
+  addNav.style.color = 'blue';
 }
 
 function contactSelected() {
-  listPage.style.visibility = 'hidden';
-  listPage.style.height = '0';
-  addPage.style.visibility = 'hidden';
-  addPage.style.height = '0';
-  contactPage.style.visibility = 'visible';
-  contactPage.style.height = '100%';
+  listPage.style.display = 'none';
+  listNav.style.color = 'black';
+  addPage.style.display = 'none';
+  addNav.style.color = 'black';
+  contactPage.style.display = 'block';
+  contactNav.style.color = 'blue';
 }
+
+/* Displays books on DOM loaded */
+collection.displayBooks();
+
+form.addEventListener('submit', (e) => {
+  collection.addBook(e);
+  bookName.value = '';
+  author.value = '';
+  listSelected();
+});
+bookList.addEventListener('click', collection.removeBook.bind(collection));
 
 /* Navigation event listeners */
 listNav.addEventListener('click', listSelected);
